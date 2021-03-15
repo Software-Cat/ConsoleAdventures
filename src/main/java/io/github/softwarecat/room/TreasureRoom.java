@@ -22,9 +22,8 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.world;
+package io.github.softwarecat.room;
 
-public enum WorldType {
-    Random,
-    Empty
+public class TreasureRoom extends Room {
+
 }

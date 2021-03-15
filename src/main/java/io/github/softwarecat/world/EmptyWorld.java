@@ -25,4 +25,9 @@
 package io.github.softwarecat.world;
 
 public class EmptyWorld extends World {
+    EmptyWorld(int length, int width) {
+        super(length, width);
+
+
+    }
 }

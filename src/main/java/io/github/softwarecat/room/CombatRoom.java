@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.entity;
+package io.github.softwarecat.room;
 
-public abstract class Entity {
-    float health;
+public class CombatRoom extends Room {
+
 }

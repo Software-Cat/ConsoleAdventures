@@ -24,9 +24,13 @@
 
 package io.github.softwarecat.room;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class Room {
-    protected List<Room> connectedRooms = new ArrayList<>();
+    protected final Set<Room> connectedRooms = new HashSet<>();
+
+    public Set<Room> getConnections() {
+        return connectedRooms;
+    }
 }

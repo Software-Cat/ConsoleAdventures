@@ -22,8 +22,7 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.entity;
+package io.github.softwarecat.ability;
 
-public abstract class Entity {
-    float health;
+public abstract class Ability {
 }

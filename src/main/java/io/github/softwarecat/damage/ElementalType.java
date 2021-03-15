@@ -22,8 +22,13 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.entity;
+package io.github.softwarecat.damage;
 
-public abstract class Entity {
-    float health;
+public enum ElementalType {
+    NONE,
+    WATER,
+    FIRE,
+    AIR,
+    EARTH,
+    AETHER
 }

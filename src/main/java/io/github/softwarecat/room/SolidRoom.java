@@ -24,5 +24,6 @@
 
 package io.github.softwarecat.room;
 
-public class Empty {
+public class SolidRoom extends Room {
+
 }

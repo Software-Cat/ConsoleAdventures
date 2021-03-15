@@ -27,10 +27,32 @@ package io.github.softwarecat.world;
 import io.github.softwarecat.gamerule.GameRule;
 import io.github.softwarecat.room.Room;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class World {
-    protected final List<Room> rooms = new ArrayList<>();
-    protected List<GameRule> rules = new ArrayList<>();
+    protected final Set<GameRule> rules = new HashSet<>();
+
+    protected Room[][] rooms;
+    protected int worldLength;
+    protected int worldWidth;
+
+    public World(int length, int width) {
+        worldLength = length;
+        worldWidth = width;
+
+        rooms = new Room[worldLength][worldWidth];
+    }
+
+    public Room getRoom(int x, int y) {
+        if (x < 0 || y < 0 || x > worldLength || y > worldWidth) {
+            return null;
+        } else {
+            return rooms[y][x];
+        }
+    }
+
+    public void setRoom(int x, int y, Room room) {
+        rooms[y][x] = room;
+    }
 }

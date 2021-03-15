@@ -24,5 +24,8 @@
 
 package io.github.softwarecat.entity.player;
 
-public abstract class Player {
+import io.github.softwarecat.entity.Entity;
+
+public class Player extends Entity {
+
 }

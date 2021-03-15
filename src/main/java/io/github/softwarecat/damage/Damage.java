@@ -22,8 +22,14 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.entity;
+package io.github.softwarecat.damage;
 
-public abstract class Entity {
-    float health;
+import io.github.softwarecat.entity.Entity;
+
+import java.util.List;
+
+public class Damage {
+    float damage;
+    ElementalType type;
+    List<Entity> targets;
 }

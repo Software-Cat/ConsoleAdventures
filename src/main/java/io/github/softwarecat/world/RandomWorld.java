@@ -25,5 +25,7 @@
 package io.github.softwarecat.world;
 
 public class RandomWorld extends World {
-
+    RandomWorld(int length, int width, int seed) {
+        super(length, width);
+    }
 }

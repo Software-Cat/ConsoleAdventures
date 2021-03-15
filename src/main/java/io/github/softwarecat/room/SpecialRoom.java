@@ -22,17 +22,7 @@
  * SOFTWARE.
  */
 
-package io.github.softwarecat.world;
+package io.github.softwarecat.room;
 
-public class WorldFactory {
-    public World getWorld(WorldType worldType) {
-        switch (worldType) {
-            case Random:
-                return new RandomWorld();
-            case Empty:
-                return new EmptyWorld();
-            default:
-                return null;
-        }
-    }
+public class SpecialRoom extends Room {
 }
